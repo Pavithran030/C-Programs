@@ -1,62 +1,4 @@
-
-     	There are N children and the Chef wants to give them 1 candy each. Chef already has x candies with him. To buy the rest, he visits a candy shop. In the shop, packets containing exactly 4 candies are available. Determine the minimum number of candy packets Chef must buy so that he is able to give 1 candy to each of the children.
-
-Input Format
-         The first and only line of each test case contains two integers and — the number ofchildren and the number of candies Chef already has.
-
-Output Format
-         The minimum number of candy packets Chef must buy so that he is able to give 1 candy to each of the children.
-
-**********************************************
-
-#include<stdio.h>
-int main()
-{
-    int N,X,diff,a,b;
-    printf("Total number of childrens:");
-    scanf("%d",&N);
-    printf("Total number of Candies:");
-    scanf("%d",&X);
-    diff=N-X;
-    a=diff/4;
-    if(N>X)
-    {
-      if(diff%4==0)
-      {
-        printf("Buy %d packets of chocolate: ",a);
-      }
-      else if(diff>4)
-      {
-       a=a+1;
-       printf("Buy %d packets of chocolate :",a);
-      }
-      else
-      {
-        printf("Buy 1 packet of chocolate ");
-      }
-    }
-    else
-    {
-       printf("No need to go to candy shop");
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**********************************************
-	Chef has started working at the candy store. The store has 100 chocolates in total. Chef’s daily goal is to sell X chocolates. For each chocolate sold, he will get 1 rupee. However, if the Chef exceeds his daily goal, he gets 2 rupees per chocolate for each extra chocolate. If the Chef sells Y chocolates in a day, find the total amount he made.
+1.Chef has started working at the candy store. The store has 100 chocolates in total. Chef’s daily goal is to sell X chocolates. For each chocolate sold, he will get 1 rupee. However, if the Chef exceeds his daily goal, he gets 2 rupees per chocolate for each extra chocolate. If the Chef sells Y chocolates in a day, find the total amount he made.
 
 Program
 
@@ -92,7 +34,7 @@ Total amount when goal exceed: 194
 
 **********************************************
 
-	There are N children and the Chef wants to give them 1 candy each. Chef already has x candies with him. To buy the rest, he visits a candy shop. In the shop, packets containing exactly 4 candies are available. Determine the minimum number of candy packets Chef must buy so that he is able to give 1 candy to each of the children.
+2.There are N children and the Chef wants to give them 1 candy each. Chef already has x candies with him. To buy the rest, he visits a candy shop. In the shop, packets containing exactly 4 candies are available. Determine the minimum number of candy packets Chef must buy so that he is able to give 1 candy to each of the children.
 Input Format
 The first and only line of each test case contains two integers and — the number of
 children and the number of candies Chef already has.
