@@ -40,3 +40,54 @@ int main()
        printf("No need to go to candy shop");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**********************************************
+	Chef has started working at the candy store. The store has 100 chocolates in total. Chef’s daily goal is to sell X chocolates. For each chocolate sold, he will get 1 rupee. However, if the Chef exceeds his daily goal, he gets 2 rupees per chocolate for each extra chocolate. If the Chef sells Y chocolates in a day, find the total amount he made.
+
+Program
+
+#include<stdio.h>
+int main()
+{
+    int total_choco=100,x,y,a,b;
+    printf("Chocolate sale by the chief: ");
+    scanf("%d",&x);
+    if(x<=100)
+    {
+    a=x*1;
+    printf("1 rupees for his normal goal:%d",a);
+    printf("\nwhen exceed his goal:");
+    scanf("%d",&y);
+    b=2*y;
+    printf("Total amount when goal exceed: %d",b);
+    }
+    else
+    {
+    printf("The Chocolate is out of stock in the shop");
+    }
+    return 0;
+ }
+
+**********************************************
+Sample input
+
+Chocolate sale by the chief: 78
+1 rupees for his normal goal:78
+when exceed his goal:97
+Total amount when goal exceed: 194
+
+**********************************************
