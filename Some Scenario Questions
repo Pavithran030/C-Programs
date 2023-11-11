@@ -91,3 +91,59 @@ when exceed his goal:97
 Total amount when goal exceed: 194
 
 **********************************************
+
+	There are N children and the Chef wants to give them 1 candy each. Chef already has x candies with him. To buy the rest, he visits a candy shop. In the shop, packets containing exactly 4 candies are available. Determine the minimum number of candy packets Chef must buy so that he is able to give 1 candy to each of the children.
+Input Format
+The first and only line of each test case contains two integers and — the number of
+children and the number of candies Chef already has.
+Output Format
+The minimum number of candy packets Chef must buy so that he is able to give 1 candy to each of the children.
+
+Program
+
+#include<stdio.h>
+int main()
+{
+    int N,X,diff,a,b;
+    printf("Total number of childrens:");
+    scanf("%d",&N);
+    printf("Total number of Candies:");
+    scanf("%d",&X);
+    diff=N-X;
+    a=diff/4;
+    if(N>X)
+    {
+      if(diff%4==0)
+      {
+        printf("Buy %d packets of chocolate: ",a);
+      }
+      else if(diff>4)
+      {
+       a=a+1;
+       printf("Buy %d packets of chocolate ",a);
+      }
+      else
+      {
+        printf("Buy 1 packet of chocolate ");
+      }
+    }
+    else
+    {
+       printf("No need to go to candy shop");
+    }
+}
+
+**********************************************
+Sample input 1
+
+Total number of childrens:68
+Total number of Candies:40
+Buy 7 packets of chocolate
+
+sample input 2
+
+Total number of childrens:50
+Total number of Candies:50
+No need to go to candy shop
+
+**********************************************
