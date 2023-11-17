@@ -1,0 +1,40 @@
+//Average of Odd Numbers below the Range
+
+#include<stdio.h>
+int main()
+{
+    int n,i,total=0,sum=0;
+    float all;
+    //float sum=0;
+    printf("Enter the number range to add Odd numbers :");
+    scanf("%d",&n);
+    for(i=0;i<=n;i++)
+    {
+        if(i%2!=0)
+        {
+            sum=sum+i;
+            total++;
+        }
+    }
+    all=sum/total;
+    printf("%d",sum);
+    printf("\nAverage: %.2f",all);
+    return 0;
+}
+***************************************************************************************
+
+Sample Input 1
+6
+Sample Output 1
+Enter the number range to add Odd numbers :5
+Sum of the given Range Odd numbers :9
+Average: 3.00
+
+Sample Input 2
+15
+Sample output 2
+Enter the number range to add Odd numbers :15
+Sum of the given Range Odd numbers :64
+Average: 8.00
+
+***************************************************************************************
