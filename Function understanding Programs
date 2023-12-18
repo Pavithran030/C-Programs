@@ -28,26 +28,48 @@ Input -2
 //C Program with function using Call by value
 
 #include<stdio.h>
-void pattern(int a,int b,int c)
+void pattern(int t) //Formal parameter
 {
-	int t;
-	//printf("Enter three number to find total : ");
-	//scanf("%d%d%d",&a,&b,&c);
-	t=a+b+c;
+	t=10+1;
 	printf("Total value of three number: %d\n",t);
 }
 void main()
 {
 	int a=30,b=40,c=50,t;
-	pattern(a,b,c);
 	t=a+b+c;
-	printf("Total of three numbers : %d",t+10);
+	pattern(t); //Actual parameter
+	printf("Total of three numbers : %d",t);
 }
 
 .......................................................................................................................................
 
 Input -1
 
-	Total value of three number: 120
-	Total of nthree numbers : 130
+	Total value of three number: 11
+	Total of nthree numbers : 120
 .........................................................................................................................................
+// C Program with function using Call by reference
+
+#include<stdio.h>
+void pattern(int *t) //Formal Parameter
+{
+	*t=10+1;
+	printf("Total value of three number: %d\n",*t);
+}
+void main()
+{
+	int a=30,b=40,c=50,t;
+	t=a+b+c;
+	pattern(&t);// Actual Parameter
+	printf("Total of three numbers : %d",t);
+}
+
+...........................................................................................................................................
+
+Input -1
+
+        Total value of three number: 11
+	Total of nthree numbers : 11
+
+............................................................................................................................................
+
