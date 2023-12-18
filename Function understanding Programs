@@ -24,3 +24,30 @@ Input -2
       The cube of given number : 125
 
 ....................................................................................................................................
+
+//C Program with function using Call by value
+
+#include<stdio.h>
+void pattern(int a,int b,int c)
+{
+	int t;
+	//printf("Enter three number to find total : ");
+	//scanf("%d%d%d",&a,&b,&c);
+	t=a+b+c;
+	printf("Total value of three number: %d\n",t);
+}
+void main()
+{
+	int a=30,b=40,c=50,t;
+	pattern(a,b,c);
+	t=a+b+c;
+	printf("Total of three numbers : %d",t+10);
+}
+
+.......................................................................................................................................
+
+Input -1
+
+	Total value of three number: 120
+	Total of nthree numbers : 130
+.........................................................................................................................................
