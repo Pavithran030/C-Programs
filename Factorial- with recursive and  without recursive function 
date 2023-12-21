@@ -27,3 +27,26 @@ Enter a number to find its factorial : 5
 ......................................................
 
 //Factorial without recursive function 
+
+
+#include <stdio.h>
+
+int main()
+{
+    int num,l=1;
+    printf("Enter a number to find its factorial : ");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+        l=l*i;
+    }
+    printf("%d\n",l);
+}
+
+........................................................
+
+
+Enter a number to find its factorial : 5
+120
+
+.........................................................
