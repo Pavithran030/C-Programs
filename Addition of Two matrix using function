@@ -1,0 +1,31 @@
+#include <stdio.h>
+void inputMatrix(int rows, int cols, int matrix[rows][cols]) {
+    printf("Enter the elements of the matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+}
+void addMatrices(int rows, int cols, int matrix1[rows][cols], int matrix2[rows][cols]) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+             printf("%d ",matrix1[i][j] + matrix2[i][j]);
+        }
+        printf("\n");
+    }
+}
+int main() {
+    int rows, cols;
+    printf("Enter the number of rows and columns for the matrices: ");
+    scanf("%d %d", &rows, &cols);
+    if (rows <= 0 || cols <= 0) {
+        printf("Invalid matrix dimensions. Please enter positive values for rows and columns.\n");
+        return 1;  // Exit with an error code
+    }
+    int matrix1[rows][cols], matrix2[rows][cols], result[rows][cols];
+    inputMatrix(rows, cols, matrix1);
+    inputMatrix(rows, cols, matrix2);
+    addMatrices(rows, cols, matrix1, matrix2);
+    return 0;
+}
