@@ -30,7 +30,7 @@ int main() {
         printf("Invalid matrix dimensions. Please enter positive values for rows and columns.\n");
         return 1;  // Exit with an error code
     }
-    int matrix1[rows][cols], matrix2[rows][cols], result[rows][cols];
+    int matrix1[rows][cols], matrix2[rows][cols];
     inputMatrix(rows, cols, matrix1);
     inputMatrix(rows, cols, matrix2);
     addMatrices(rows, cols, matrix1, matrix2);
